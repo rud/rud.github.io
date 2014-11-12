@@ -11,7 +11,7 @@ Flash messages in Rails applications need a bit of love. A lot of them tend to b
 
 For this to work, add the text you want shown to your `config/locale/en.yml` (by default):
 
-```yaml
+{% highlight yaml %}
 en:
   posts:
     create:
@@ -21,26 +21,26 @@ en:
   flash:
     created: "Successfully created"
     updated: "Successfully updated"
-```
+{% endhighlight %}
 
 Here the `posts#create` action has a custom flash for the `:created` flash-message. All other controllers and actions in the application where a flash-message of `:created` is used the default message of `"Successfully created"` will be shown.
 
 Next, add this to your `ApplicationController` (this is all of the magic):
-```ruby
+{% highlight ruby %}
   protected
   def flash_message cause, args = {}
     primary_key = "#{controller_name}.#{action_name}.flash.#{cause}"
     default_key = "flash.#{cause}".to_sym
     I18n.t primary_key, args.merge(:default => default_key)
   end
-```
+{% endhighlight %}
 
 Finally, this is how you use it within an action:
-```ruby
+{% highlight ruby %}
   flash[:notice] = flash_message(:created)
   # and
   redirect_to :root, :notice => flash_message(:created)
-```
+{% endhighlight %}
 
 Try to keep the actions somewhat generic like `:created`, `:deleted`, `:updated`, etc. This makes the default values easier to manage.
 

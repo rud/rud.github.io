@@ -13,7 +13,7 @@ A key step to debugging any program is replicating the environment to ensure you
 
 It may have looked something like this:
 
-```ruby
+{% highlight ruby %}
 class Buggy
   # assuming perform_operation and special_options exist...
   def buggy_method(param=nil, options={})
@@ -23,7 +23,7 @@ class Buggy
     @instance_var = perform_operation(special_options(param, options))
   end
 end
-```
+{% endhighlight %}
 
 <h3>The case for ruby-debug</h3>
 
@@ -42,19 +42,19 @@ If only there was a better way to do this.
 
 To get set up with the debugger, we'll need to install the gem:
 
-```sh
+{% highlight sh %}
 # Using MRI-1.9.2
 gem install ruby-debug19
 
 # Using MRI-1.8.7 or Ruby Enterprise Edition
 gem install ruby-debug
-```
+{% endhighlight %}
 
 <h3>ruby-debug in action</h3>
 
 Let's update the example from above using a debugger breakpoint instead of inspection puts:
 
-```ruby
+{% highlight ruby %}
 class Buggy
   # assuming perform_operation and special_options exist...
   def buggy_method(param=nil, options={})
@@ -62,21 +62,21 @@ class Buggy
     @instance_var = perform_operation(special_options(param, options))
   end
 end
-```
+{% endhighlight %}
 
 The next time the method is called, the debugger will stop and give us an interactive shell. We can inspect the values of each variable with the <code>eval</code> command:
 
-``` ruby
+{% highlight ruby %}
 eval param
 eval options
-```
+{% endhighlight %}
 
 We can also see what the return value is of the invoked methods:
 
-``` ruby
+{% highlight ruby %}
 eval special_options(param, options)
 eval perform_operation(special_options(param, options))
-```
+{% endhighlight %}
 
 We can even use the step command to enter inside of <code>special_options</code> and <code>perform_operation</code> to see what they do.
 
