@@ -16,4 +16,5 @@ github_username:  rud
 # Build settings
 markdown: kramdown
 permalink: "/site/:year/:title/"
-paginate: 5
+paginate: 2 # for the frontpage
+paginate_path: "/blog/page:num"
