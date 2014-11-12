@@ -1,14 +1,19 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: object.io
+subtitle: All code has costs. Only some code has value.
+author: Laust Rud Jacobsen
+email: work@object.io
+description: >
+  Hi, I'm Laust Rud Jacobsen, a freelance webapp developer
+  specializing in Ruby on Rails. Hire me to build awesome
+  stuff for you.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# url: "https://object.io" # the base hostname & protocol for your site
+url: "https://object.io" # the base hostname & protocol for your site
+twitter_username: laustrud
+github_username:  rud
 
 # Build settings
 markdown: kramdown
+permalink: "/site/:year/:title/"
+paginate: 5
