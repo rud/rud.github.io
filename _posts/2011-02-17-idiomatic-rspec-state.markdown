@@ -10,7 +10,7 @@ RSpec is an extremely convenient tool for structuring and writing specs, and I u
 
 One set of built-in helpers I'd like to cheer on a bit are <code>let</code> and <code>let!</code>, as they can greatly simplify setting up state for multiple examples. They exist to provide a simple and convenient way to create and share state between examples. When not using these methods, specs with a bit of shared state typically look like this:
 
-```ruby
+{% highlight ruby %}
 context "with a bit of state" do
   before :each do
     @user = User.create!
@@ -23,7 +23,7 @@ context "with a bit of state" do
 
   # .. more examples reusing the @user
 end
-```
+{% endhighlight %}
 
 This is easy to get started with, and when there are only a few variables in the <code>before</code> block, things are fine. But if you have a typo in an example where you intended to use the <code>@user</code> instance variable in an example, but you accidentally typed <code>@usr</code>, you just get a <code>nil</code> value, instead of a helpful error message regarding an unknown indentifier. This minor problem can be avoided by using <code>let</code> instead, as you get an unknown indentifier error instead of a <code>nil</code> value. Another issue is that all variables in the <code>before</code> block are evaluated, whether or not they are actually used in the examples.
 
@@ -42,7 +42,7 @@ The fact that results are both memoized and lazy-evaluated means no extra effort
 
 Please use the correct helper method - I've seen examples like this:
 
-```ruby
+{% highlight ruby %}
 context "with a bit of state" do
   let(:user) { User.create! }
 
@@ -57,10 +57,11 @@ context "with a bit of state" do
 
   # .. more examples reusing the user
 end
-```
+{% endhighlight %}
 
 The exact same thing can be expressed directly and become more readable, just by adding a <code>!</code>:
-```ruby
+
+{% highlight ruby %}
 context "with a bit of state" do
   let!(:user) { User.create! }
 
@@ -70,7 +71,7 @@ context "with a bit of state" do
 
   # .. more examples reusing the user
 end
-```
+{% endhighlight %}
 
 The <code>let</code> and <code>let!</code> helpers are available in from versions <code>rspec 1.3.1</code>, and <code>rspec-core 2.0.0</code> onwards. In a nutshell, this means they are available for use in Rails 2 and Rails 3 projects. Take them for a spin if you haven't already, and tell me how it goes.
 

@@ -12,18 +12,18 @@ Quick diagnostics of production issues become a lot easier with a direct way to 
 
 Simply install and load the <code><a href="https://github.com/ph7/xray">xray</a></code> gem, then add this to your ```Gemfile``` (or similar):
 
-``` ruby Gemfile
+{% highlight ruby %}
 gem "xray", :require => "xray/thread_dump_signal_handler"
-```
+{% endhighlight %}
 
 Next, you need to start the ruby-process, and find the PID (process identifier):
 
-``` console
+```
 $ ps ax | grep ruby
 ```
 
 You can now invoke:
-``` console
+```
 $ kill -3 1234
 ```
 

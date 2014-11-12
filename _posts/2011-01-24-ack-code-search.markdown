@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Ack! Effortlessly search your codebase
 wordpress_id: 193
@@ -8,13 +8,11 @@ categories: [tools, ack, search]
 ---
 My favorite commandline tool for efficiently searching a codebase is <a href="http://betterthangrep.com/">Ack</a>. It shows file:line and highlights the matches in the output. When refactoring a solution it is a trusty companion to quickly find all uses of a method, for instance.
 
-{% img /images/posts/2011-01-24-ack-code-search/ack-quick-demo.png %}
+![]({{ site.url }}/assets/images/posts/2011-01-24-ack-code-search/ack-quick-demo.png)
 
 It is easy to install with DarwinPorts:
 
-```
-sudo port install p5-app-ack
-```
+`sudo port install p5-app-ack`
 
 This puts the <code>ack</code> command in your <code>PATH</code> and you're ready to go.
 
@@ -32,11 +30,11 @@ Ack is fast because it skips uninteresting files. It is meant for searching for 
 
 Adding this small bit of config means <code>.haml</code>, <code>.sass</code>, and Cucumber <code>.feature</code> files are also included when searching.
 
-``` console ~/.arkrc:
+{% highlight bash %}
 --type-set=haml=.haml
 --type-set=sass=.sass
 --type-set=cucumber=.feature
-```
+{% endhighlight %}
 
 With this in place, you are ready to rock HAML/SSS + Cucumber projects.
 

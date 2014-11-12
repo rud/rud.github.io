@@ -10,13 +10,13 @@ My git workflow includes the <a href="{% post_url 2010-12-29-hack-and-ship %}">h
 
 Now, meet <code>chop</code> - for chopping down the current working branch after it has been shipped and is no longer needed. The script changes the current branch to <code>master</code>, and then deletes the branch you was previously on. If you give a branch-name as an argument that will be the new current branch.
 
-```sh
+{% highlight bash %}
 #!/bin/sh -x
 set -o errexit
 CURRENT_BRANCH=$(git branch | grep '\*')
 git checkout ${1:-"master"} || exit 1
 git branch -d ${CURRENT_BRANCH:2}
-```
+{% endhighlight %}
 
 I use this small script is multiple times every day, and I really like the name of it. There is not a whole lot of functionlity, but as this is an often repeated action, it makes sense to automate it.
 

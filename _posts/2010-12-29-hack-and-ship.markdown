@@ -16,7 +16,7 @@ For more than a year I've been using two small shell-scripts called <code>hack</
 
 <code>hack</code> pulls down the latest changes from the central <code>origin/master</code> branch, and rebases your local feature-branch on this new <code>master</code>. The end result is all the latest changes are integrated, and you will be able to push your commits without adding an unnecessary merge-commit to the shared history.
 
-```sh
+{% highlight bash %}
 #!/bin/sh -x
 # Exit if any error is encountered:
 set -o errexit
@@ -26,11 +26,11 @@ git checkout master
 git pull --rebase origin master
 git checkout ${CURRENT}
 git rebase master
-```
+{% endhighlight %}
 
 <code>ship</code> is a quick way to merge your current branch to <code>master</code>, and push the result to the central repository branch called <code>origin/master</code>.
 
-```sh
+{% highlight bash %}
 #!/bin/sh -x
 # Exit if any error is encountered:
 set -o errexit
@@ -40,7 +40,7 @@ git checkout master
 git merge ${CURRENT}
 git push origin master
 git checkout ${CURRENT}
-```
+{% endhighlight %}
 
 Usually when a feature is completed, I run <code>hack</code>, run all code-tests for the project, the run <code>ship</code>. Taken together, the process is automated and looks like this:
 ```bash
