@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+menu_order: 2
 ---
 
 Working effectively with Ruby on Rails requires a firm understanding of the Ruby language and the full web of associated technologies. I finished my **M.Sc. in Computer Science** at Aarhus University in 2004, and my knowledge of both the tools and platform allow me to create **simple and efficient Rails** solutions.

@@ -5,6 +5,7 @@ permalink: /client-list/
 comments: false
 sharing: true
 footer: true
+menu_order: 3
 ---
 
 * [AutoUncle Aps](http://autouncle.dk), Denmark
