@@ -5,17 +5,20 @@ author: Laust Rud Jacobsen
 email: work@object.io
 description: >
   Hi, I'm Laust Rud Jacobsen, a freelance webapp developer
-  specializing in Ruby solutions. Hire me to build awesome
-  stuff for you.
+  specializing in Ruby-based solutions. You can hire me to
+  build awesome stuff for you.
 
   <p>Your idea needs somebody who understands the tools, and
-  can puzzle out the trickiest of issues. I hold a M.Sc.
-  in Computer Science, and I have been working full-time
-  on Rails-projects since early 2008, and have been
-  completely test-driven since day one.</p>
+  can puzzle out the trickiest of issues. I'm a M.Sc.
+  in Computer Science, and I use that foundation to build
+  efficient, maintainable and understandable solutions.
+  I have been working full-time on Rails-projects since
+  early 2008, and have been completely test-driven since
+  day one.</p>
 
   <p>I live in beautiful Aarhus, Denmark, and I have
-  excellent experience working with global teams since 2008.</p>
+  excellent experience working efficiently with both local
+  and globally distributed teams since 2008.</p>
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://object.io" # the base hostname & protocol for your site
