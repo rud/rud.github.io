@@ -31,3 +31,6 @@ markdown: kramdown
 permalink: "/site/:year/:title/"
 paginate: 2 # for the frontpage
 paginate_path: "/blog/page:num"
+
+gems:
+  - jekyll-sitemap
