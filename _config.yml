@@ -32,6 +32,17 @@ permalink: "/site/:year/:title/"
 paginate: 2 # for the frontpage
 paginate_path: "/blog/page:num"
 
+jekyll-archives:
+  enabled: ['year', 'categories', 'tags']
+  layouts:
+    year: 'year-archive-layout'
+    tag: 'tag-archive-layout'
+    category: 'category-archive-layout'
+  permalinks:
+    year: '/archives/:year/'
+    tag: '/archives/tag/:name/'
+    category: '/archives/category/:name/'
+
 gems:
   - jekyll-sitemap
   - jekyll-archives
