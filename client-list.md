@@ -24,5 +24,5 @@ menu_order: 3
 * mouZe.net, Denmark
 * [Ristorante Ravello](http://ristoranteravello.dk/site/), Denmark
 * [TDC Hosting](http://www.tdchosting.dk), Denmark
-* [Techinjectors ApS](http://techinjectors.com), Denmark
+* Techinjectors ApS, Denmark
 * Tokyo Shock ApS, Denmark / Japan
