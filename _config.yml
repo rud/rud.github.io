@@ -21,7 +21,6 @@ description: >
   and globally distributed teams since 2008.</p>
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "https://object.io" # the base hostname & protocol for your site
 url: "https://object.io" # the base hostname & protocol for your site
 twitter_username: laustrud
 github_username:  rud
@@ -30,7 +29,7 @@ github_username:  rud
 markdown: kramdown
 permalink: "/site/:year/:title/"
 paginate: 2 # for the frontpage
-paginate_path: "/blog/page:num"
+paginate_path: "/blog/page/:num"
 
 jekyll-archives:
   enabled: ['year', 'categories', 'tags']
