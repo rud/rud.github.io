@@ -1,0 +1,50 @@
+#blog-archives {
+  article {
+    padding-top: 0.55em; // Move header down
+    position: relative;
+    footer {
+      padding: 0;
+      margin: 0;
+      display: inline;
+    }
+  }
+  h1 {
+    color: $text-color;
+    margin-bottom: 0;
+  }
+  a.category, time {
+    color: $grey-color-dark;
+  }
+  color: $grey-color-dark;
+  time {
+    font-size: .9em;
+    .month, .day {
+      display: inline-block;
+    }
+    .month {
+      text-transform: uppercase;
+    }
+  }
+  a:hover { color: $text-color; }
+  h2 {
+    display: none; // Hide year when too little room
+  }
+  @media only screen and (min-width: 550px) {
+    article {
+      margin-left: 5em;
+    }
+    h2 {
+      font-weight: normal;
+      display: inline-block;
+      position: relative;
+      float: left;
+    }
+    .year { display: none; }
+    article {
+      padding:{
+        left: 1.5em;
+        bottom: 1.5em;
+      }
+    }
+  }
+}
