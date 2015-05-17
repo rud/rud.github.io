@@ -8,7 +8,7 @@ categories: [tools, git, workflow]
 ---
 There are many ways to backup a git repository and shuttle sets of changes around. If you just want an offline copy for safe-keeping, this method is very simple and convenient:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git bundle create blog-dump.bundle master
 {% endhighlight %}
 
@@ -20,7 +20,7 @@ Single files are easy to archive and backup.
 
 When you want to restore from such a bundle backup, you simply clone from it. The steps include creating a new repository, and then pulling from the bundle, like you would a remote repository:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git init
 $ git pull blog-dump.bundle master
 {% endhighlight %}
@@ -28,7 +28,7 @@ $ git pull blog-dump.bundle master
 Your repository now holds all commits that were stored in the bundle. For more usage-scenarios see the
 [official git bundle help](http://www.kernel.org/pub/software/scm/git/docs/git-bundle.html) or just type:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git bundle --help
 {% endhighlight %}
 

@@ -12,16 +12,20 @@ My favorite commandline tool for efficiently searching a codebase is <a href="ht
 
 It is easy to install with DarwinPorts:
 
-`sudo port install p5-app-ack`
+{% highlight shell-session %}
+sudo port install p5-app-ack
+{% endhighlight %}
 
 This puts the <code>ack</code> command in your <code>PATH</code> and you're ready to go.
 
 ### Basic usage of Ack
 
 A recurring task is to find all uses of a method or class in a project. As this is simply a substring search, you invoke Ack with:
-```
+
+{% highlight shell-session %}
 ack inconvenience_late_payers
-```
+{% endhighlight %}
+
 and ack quickly starts outputting all the places where this is used. If you add a <code>-i</code>, the search becomes case-insensitive. Use <code>ack --help</code> to see all the many available options.
 
 ### A bit of configuration goes a long way
@@ -30,7 +34,7 @@ Ack is fast because it skips uninteresting files. It is meant for searching for 
 
 Adding this small bit of config means <code>.haml</code>, <code>.sass</code>, and Cucumber <code>.feature</code> files are also included when searching.
 
-{% highlight bash %}
+{% highlight shell-session %}
 --type-set=haml=.haml
 --type-set=sass=.sass
 --type-set=cucumber=.feature

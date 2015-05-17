@@ -18,14 +18,15 @@ gem "xray", :require => "xray/thread_dump_signal_handler"
 
 Next, you need to start the ruby-process, and find the PID (process identifier):
 
-```
+{% highlight shell-session %}
 $ ps ax | grep ruby
-```
+{% endhighlight %}
 
 You can now invoke:
-```
+
+{% highlight shell-session %}
 $ kill -3 1234
-```
+{% endhighlight %}
 
 where <code>1234</code> is the PID of the ruby process. <strong>Note this does not terminate the process</strong>. Instead, you immediately see a full stacktrace for <strong>current thread</strong> written to standard out of the process. If you're using the <a href="http://www.rubyenterpriseedition.com/">Ruby Enterprise Edition</a> runtime, you will get a stacktrace for <strong>all threads</strong>, a big win. If you are running the process interactively, you see the output directly in the terminal. For service-processes in production, you will need to check the appropriate logfile.
 
@@ -33,9 +34,9 @@ where <code>1234</code> is the PID of the ruby process. <strong>Note this does n
 
 You can see all running <a href="http://www.modrails.com/">Phusion Passenger</a> instances, including their individual PIDs with this:
 
-```
+{% highlight shell-session %}
 $ rvmsudo passenger-status
-```
+{% endhighlight %}
 
 Then move in for the <code>kill -3</code>, and have a look at standard out for Passenger. By default on OS X 10.6, this ends up in the file <code>/private/var/log/apache2/error_log</code>, so have a look there. Notice the use of <code>rvmsudo</code> instead of regular <code>sudo</code> - this is because I'm using <a href="http://rvm.beginrescueend.com/">RVM</a> to manage my ruby-versions.
 

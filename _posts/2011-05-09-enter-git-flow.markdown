@@ -14,7 +14,7 @@ I have previously described how I've been using small <a href="{% post_url 2010-
 
 Installing the [git-flow](https://github.com/nvie/gitflow) toolset on OS X is trivial using the <a href="http://mxcl.github.com/homebrew/">homebrew</a> installer:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ brew install git-flow
 {% endhighlight %}
 
@@ -22,13 +22,13 @@ The [git-flow project](https://github.com/nvie/gitflow) also has instructions fo
 
 Installing git-flow adds a few helpful commands to the git environment for creating and managing branches for features and releases. A fresh git repository is born with a <code>master</code> branch. In the default git-flow setup, this is where the current <strong>production</strong> release lives. Furthermore, a branch called <code>develop</code> is created, this is where development takes place. Note that git-flow is just a series of shortcuts to having a development branch and a production branch with sensible ways of shuttling changes back and forth. After installing the git-flow package, configure your local repository for git-flow use with:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow init
 {% endhighlight %}
 
 You can most likely accept the defaults by pressing enter at each question - this also makes it easier for others to initialize git-flow in their working copy, as all are using the same defaults. The only change from running the <code>init</code> command is two <code>[gitflow]</code> sections in your <code>.git/config</code> file looking like this:
 
-{% highlight bash %}
+{% highlight shell-session %}
 [gitflow "branch"]
   master = master
   develop = develop
@@ -42,7 +42,7 @@ You can most likely accept the defaults by pressing enter at each question - thi
 
 It's no more magic than that. Consult the built-in help with:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow
 {% endhighlight %}
 
@@ -52,13 +52,13 @@ If you've got the <code>bash-completion</code> package installed, you can use ta
 
 Start work on a feature - say feature 77 from your issue-tracker:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow feature start 77-speedup-yak-shaving
 {% endhighlight %}
 
 This creates a new regular local git branch called <code>feature/77-speedup-yak-shaving</code> based on the current <code>develop</code> and places you on it.  Want to share your work in progress with others? Use:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow feature publish 77-speedup-yak-shaving
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ This pushes the branch, and sets up your local branch to track the remote branch
 
 All done with a feature? Rebase your feature on the current <code>develop</code> branch, then merge it in:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow feature rebase
 $ git flow feature finish 77-speedup-yak-shaving
 {% endhighlight %}
@@ -77,13 +77,13 @@ With these two steps, you end up on <code>develop</code> with your feature merge
 
 Production releases are handled quite nicely in git-flow:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow release start 2011_year_of_the_yak
 {% endhighlight %}
 
 This creates a new branch called <code>release/2011_year_of_the_yak</code>, based on the current <code>develop</code> branch. Here you can fix any HISTORY or VERSION file, commit, and the finish up the release with:
 
-{% highlight bash %}
+{% highlight shell-session %}
 $ git flow release finish 2011_year_of_the_yak
 {% endhighlight %}
 
