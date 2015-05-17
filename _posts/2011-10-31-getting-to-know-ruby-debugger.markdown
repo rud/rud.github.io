@@ -5,6 +5,7 @@ wordpress_id: 460
 wordpress_url: http://object.io/site/?p=460
 date: 2011-10-31 14:07:09 +01:00
 author: Cameron Dykes
+meta: <a href="https://github.com/yellow5">yellow5</a>
 categories: [ruby, debug, workflow]
 ---
 <em>This is a guest-post by <a href="https://github.com/yellow5">Cameron Dykes</a>, about getting started with the ruby debugger.</em>
