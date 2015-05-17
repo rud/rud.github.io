@@ -34,7 +34,7 @@ whiskey_disk has two commands: a <code>setup</code> command, for doing the initi
 
 With the <code>config/deploy.yml</code> file in place inside the project, we're going to just try and run the <code>setup</code> command from the local computer, seeing what happens. For now, this errors out:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ wd setup -t demo
 Initialized empty Git repository in /home/deploy_user/domains/useful_site.com/.git/
 Host key verification failed.
@@ -50,14 +50,14 @@ Okay, we're not quite ready to do deployments just yet.
 
 Github hangs up on us - what's happening? Testing from my local machine as described in <a href="http://help.github.com/ssh-issues/">the github ssh guide</a>:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ ssh -T git@github.com
 Hi rud! You've successfully authenticated, but GitHub does not provide shell access.
 {% endhighlight %}
 
 That's the kind of success we're looking for on the server as well. Ssh to the server as the deploy user, and try the same command there:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ ssh -T git@github.com
 The authenticity of host 'github.com (207.97.227.239)' can't be established.
 RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
@@ -68,7 +68,7 @@ Permission denied (publickey).
 
 Try the command again, now that the host key is trusted:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ ssh -T git@github.com
 Permission denied (publickey).
 {% endhighlight %}
@@ -77,7 +77,7 @@ Notice how we get a new error later in the connection process, a <code>Permissio
 
 For the sake of completeness, this is what this situation looks like from whiskey_disk:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ wd setup -t demo
 Initialized empty Git repository in /home/deploy_user/domains/useful_site.com/.git/
 Permission denied (publickey).
@@ -90,22 +90,22 @@ error: pathspec 'origin/master' did not match any file(s) known to git.
 
 The root cause for this difference is Github knows my public key and has access to the corresponding private key, but this key is not available to my server, so it cannot authenticate against Github. The solution is fortunately simple. Do this on your local machine:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ ssh-add
 {% endhighlight %}
 
 This prompts you for the password for your private key, then keeps the private key unlocked in memory for automated access. <strong>You need to do this after each time you restart</strong> before you can do new deployments, as the unlocked key is only stored in memory. We also need to enable ssh-agent support for the connection to the server - as ssh-agent gives a server the possibility to use our private key without further prompting, you need to trust the administrator of servers you deploy to. With that caveat out of the way, open your <code>~/.ssh/config</code> file, and add a config block like this:
 
-{% highlight sh %}
+{% highlight shell-session %}
 Host example.com
-    ForwardAgent yes  # This enables ssh-agent functionality, making whiskey_disk happy
+  ForwardAgent yes  # This enables ssh-agent functionality, making whiskey_disk happy
 {% endhighlight %}
 
 Adjust the hostname to taste, obviously. You can also add port-number here, if your admin moved ssh access from the default port. While you have that file open, also check out these extremely handy [ssh productivity tips](http://blogs.perl.org/users/smylers/2011/08/ssh-productivity-tips.html) for a lot of extra ssh goodness.
 
 Close the previous connection to your server, open a new one (so ssh-agent can do its magic), then re-run the test:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ ssh -T git@github.com
 Hi rud! You've successfully authenticated, but GitHub does not provide shell access.
 {% endhighlight %}
@@ -116,7 +116,7 @@ We have ssh-win!
 
 Time to re-try the deployment <code>setup</code> from the local machine:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ wd setup -t demo
 Results:
 deploy_user@example.com => succeeded.
@@ -125,7 +125,7 @@ Total: 1 deployment, 1 success, 0 failures.
 
 This means the repository was successfully cloned into place. We only have to do this once, from now on deployments are just a matter of:
 
-{% highlight sh %}
+{% highlight shell-session %}
 $ wd deploy -t demo
 Results:
 deploy_user@example.com => succeeded.
