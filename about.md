@@ -5,7 +5,7 @@ permalink: /about/
 menu_order: 2
 ---
 
-Working effectively with Ruby on Rails requires a firm understanding of the Ruby language and the full web of associated technologies. I finished my **M.Sc. in Computer Science** at Aarhus University in 2004, and my knowledge of both the tools and platform allow me to create **simple and efficient solutions**, typically in Ruby on Rails.
+Working effectively with Ruby on Rails requires a firm understanding of the Ruby language and the full web of associated technologies. I finished my **M.Sc. in Computer Science** at Aarhus University in 2004, and my knowledge of both the tools and platform allow me to create **simple and efficient Rails** solutions.
 
 ## Diverse Ruby experience
 
@@ -19,7 +19,7 @@ My first use of Ruby was for an evolutionary algorithm project in '06, simply be
 
 If you consider using Ruby on Rails for your next web application, let me help you get an overview of the possibilities, and let us build an awesome solution together.
 
-Do you have a technical challenge you need me to solve? <a href="{{ root_url }}/contact/">Contact me</a> and we'll talk through the options.
+Do you have a technical challenge you need me to solve? [Contact me](mailto:work@object.io) and we'll talk through the options together.
 
 ## Company details
 
@@ -27,8 +27,9 @@ object.io aps<br>
 P.P.Ørums Gade 36<br>
 DK-8000 Århus C<br>
 Denmark<br>
-VAT no.: [DK33745125](http://www.cvr.dk/Site/Forms/PublicService/DisplayCompany.aspx?cvrnr=33745125)
+VAT no.: DK33745125
 
 [work@object.io](mailto:work@object.io) |
 +45 2588 4665 |
-Skype: [object.io](skype:object.io)
+Skype: [object.io](skype:object.io) |
+[Detailed CV](https://www.linkedin.com/in/laustrud/)
