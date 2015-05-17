@@ -16,8 +16,10 @@
       <div class="trigger">
         {% assign pages = site.pages | sort:"menu_order" %}
         {% for page in pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% if page.title and page.menu_order %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+            {{ page.title }}
+          </a>
           {% endif %}
         {% endfor %}
       </div>
