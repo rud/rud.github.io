@@ -1,6 +1,5 @@
 #blog-archives {
   article {
-    padding-top: 0.55em; // Move header down
     position: relative;
     footer {
       padding: 0;
@@ -8,13 +7,14 @@
       display: inline;
     }
   }
-  h1 {
+  h1, h2 {
     color: $text-color;
     margin-bottom: 0;
   }
   a.category, time {
     color: $grey-color-dark;
   }
+  a:hover { color: $text-color; }
   color: $grey-color-dark;
   time {
     font-size: .9em;
@@ -25,26 +25,22 @@
       text-transform: uppercase;
     }
   }
-  a:hover { color: $text-color; }
-  h2 {
+  .archive-year {
     display: none; // Hide year when too little room
   }
   @media only screen and (min-width: 550px) {
-    article {
-      margin-left: 5em;
-    }
-    h2 {
-      font-weight: normal;
+    .archive-year { // Show left-flowing large
       display: inline-block;
       position: relative;
       float: left;
     }
-    .year { display: none; }
+    time.year { display: none; } // Hide year from timestamp
     article {
       padding:{
         left: 1.5em;
         bottom: 1.5em;
       }
+      margin-left: 5em;
     }
   }
 }

@@ -1,7 +1,6 @@
-<h1>
-  <a class="post-link"
-     href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
-</h1>
+<h2>
+  <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
+</h2>
 
 <time
   datetime="{{ post.date | datetime | date_to_xmlschema }}"
