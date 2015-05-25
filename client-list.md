@@ -10,8 +10,8 @@ menu_order: 3
 
 * [AutoUncle Aps](http://autouncle.dk), Denmark
 * [bethgrafik](http://bethgrafik.dk), Denmark
-* [Change:HealthCare](http://www.changehealthcare.com), USA
-* [Checkd.in Corp](http://checkd.in), USA
+* [Change:HealthCare](http://www.changehealthcare.com), Nashville, TN, USA
+* Checkd.in Corp, Nashville, TN, USA
 * [CreativeCircle](http://creativecircle.dk), Denmark
 * [Copenhagen Airport](http://cph.dk), Denmark
 * [Fab:IT](http://fabit.dk), Denmark
