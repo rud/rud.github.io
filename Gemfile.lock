@@ -125,3 +125,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (= 1.9.9)
   github-pages
+
+BUNDLED WITH
+   1.10.3

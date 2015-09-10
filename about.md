@@ -32,4 +32,5 @@ VAT no.: DK33745125
 [work@object.io](mailto:work@object.io) |
 +45 2588 4665 |
 Skype: [object.io](skype:object.io) |
-[Detailed CV](https://www.linkedin.com/in/laustrud/)
+[Detailed CV](https://www.linkedin.com/in/laustrud/) |
+[Public key](https://keybase.io/rud)
