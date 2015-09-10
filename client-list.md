@@ -8,16 +8,16 @@ footer: true
 menu_order: 3
 ---
 
-* [AutoUncle Aps](http://autouncle.dk), Denmark
+* [AutoUncle Aps](https://autouncle.dk), Denmark
 * [bethgrafik](http://bethgrafik.dk), Denmark
-* [Change:HealthCare](http://www.changehealthcare.com), Nashville, TN, USA
+* [Change:HealthCare](https://www.changehealthcare.com), Nashville, TN, USA
 * Checkd.in Corp, Nashville, TN, USA
 * [CreativeCircle](http://creativecircle.dk), Denmark
 * [Copenhagen Airport](http://cph.dk), Denmark
-* [Fab:IT](http://fabit.dk), Denmark
+* [Fab:IT](http://fab-it.dk), Denmark
 * [HK](http://hk.dk), Denmark
 * [inet.dk](http://inet.dk), Denmark
-* [Jyske Bank](http://jyskebank.dk), Denmark
+* [Jyske Bank](https://www.jyskebank.dk), Denmark
 * [KeepFocus A/S](http://keepfocus.dk), Denmark
 * MicroPlanet, Denmark
 * [Munich Technology Partners](http://mtpartners.de), Germany
