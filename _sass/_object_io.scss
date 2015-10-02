@@ -28,6 +28,7 @@ $logo-color: rgb(33, 117, 155);
   zoom: 1;
 }
 .gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after {
+  clear: both;
   content: "";
   display: table;
   line-height: 0;
