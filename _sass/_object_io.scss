@@ -1,9 +1,11 @@
+$logo-color: rgb(33, 117, 155);
+
 .pagination .next {
   float: right;
 }
 
 .site-header .site-title {
-  color: rgb(33, 117, 155);
+  color: $logo-color;
   font-family: "PT Serif", Georgia, "Helvetica Neue", Arial, sans-serif;
   font-size: 43px;
   font-weight: normal;
