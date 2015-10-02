@@ -30,8 +30,8 @@ Denmark<br>
 VAT no.: DK33745125
 
 [{{ site.email }}](mailto:{{ site.email }}) |
-+45 2588 4665 |
-Skype: [object.io](skype:object.io) |
++45&nbsp;2588&nbsp;4665 |
+Skype:&nbsp;[object.io](skype:object.io) |
 [Detailed CV](https://www.linkedin.com/in/laustrud/) |
 [Public key](https://keybase.io/rud)
 
