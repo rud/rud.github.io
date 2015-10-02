@@ -12,8 +12,15 @@ $logo-color: rgb(33, 117, 155);
 }
 
 .follow-updates {
-  padding: $spacing-unit;
   background-color: $grey-color-light;
+  padding: $spacing-unit;
+
+  img {
+    float: right;
+    padding-left: $spacing-unit / 2;
+    padding-bottom: $spacing-unit;
+    width: $spacing-unit * 4;
+  }
 }
 
 // Gumroad
@@ -76,7 +83,6 @@ $logo-color: rgb(33, 117, 155);
   font-size: 15px;
   height: 40px !important;
   line-height: 100%;
-  padding: 10px;
   transition: all .05s ease-in-out;
   width: 35% !important;
 }
