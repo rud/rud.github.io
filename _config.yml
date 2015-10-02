@@ -4,7 +4,7 @@ subtitle: All code has costs. Only some code has value.
 author: Laust Rud Jacobsen
 email: work@object.io
 description: >
-  Hi, I'm Laust Rud Jacobsen, a freelance webapp developer
+  Hi, I'm Laust Rud Jacobsen, an experienced webapp developer
   specializing in Ruby-based solutions. You can hire me to
   build awesome stuff for you.
 
@@ -19,6 +19,10 @@ description: >
   <p>I live in beautiful Aarhus, Denmark, and I have
   excellent experience working efficiently with both local
   and globally distributed teams since 2008.</p>
+
+  <p>Don't be a stranger - <a href="mailto:work@object.io">
+    drop me a line</a>.
+  </p>
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://object.io" # the base hostname & protocol for your site
