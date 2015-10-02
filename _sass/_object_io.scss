@@ -47,8 +47,8 @@
   border: 1px solid #ddd;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
   color: #aaa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
+  font-family: $base-font-family;
   font-smoothing: antialiased;
   height: 40px !important;
   line-height: 20px;
@@ -70,7 +70,7 @@
   cursor: pointer;
   display: inline-block;
   filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8cc5f7, endColorstr=#5e93c1, GradientType=0)";
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $base-font-family;
   font-size: 15px;
   height: 40px !important;
   line-height: 100%;
