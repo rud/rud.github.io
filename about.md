@@ -19,7 +19,7 @@ My first use of Ruby was for an evolutionary algorithm project in '06, simply be
 
 If you consider using Ruby on Rails for your next web application, let me help you get an overview of the possibilities, and let us build an awesome solution together.
 
-Do you have a technical challenge you need me to solve? [Contact me](mailto:work@object.io) and we'll talk through the options together.
+Do you have a technical challenge you need me to solve? [Contact me](mailto:{{ site.email }}) and we'll talk through the options together.
 
 ## Company details
 
@@ -29,7 +29,7 @@ DK-8000 Århus C<br>
 Denmark<br>
 VAT no.: DK33745125
 
-[work@object.io](mailto:work@object.io) |
+[{{ site.email }}](mailto:{{ site.email }}) |
 +45 2588 4665 |
 Skype: [object.io](skype:object.io) |
 [Detailed CV](https://www.linkedin.com/in/laustrud/) |
