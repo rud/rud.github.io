@@ -31,7 +31,5 @@ permalink: "/site/:year/:title/"
 paginate: 2 # for the frontpage
 paginate_path: "/blog/page/:num"
 
-asset_version: "v1.1"
-
 gems:
   - jekyll-sitemap
