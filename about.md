@@ -34,3 +34,5 @@ VAT no.: DK33745125
 Skype: [object.io](skype:object.io) |
 [Detailed CV](https://www.linkedin.com/in/laustrud/) |
 [Public key](https://keybase.io/rud)
+
+{% include follow-updates.html %}
