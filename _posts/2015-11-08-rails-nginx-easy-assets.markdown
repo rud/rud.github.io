@@ -5,7 +5,7 @@ date: 2015-11-08 17:00
 comments: false
 ---
 
-Using the Rails asset pipeline makes it safe to cache assets forever in browsers. Ensure `config.assets.digest` is set to `true` for the production environment and that you precompile assets before or during each deploy.
+Using the Rails asset pipeline makes it safe to cache assets forever in browsers. Rails is configured for this out of the box, so you only need to ensure that you precompile assets before or during each deploy.
 
 With that out of the way you can simply add this snippet to your nginx config to allow assets with digests in their name to be cached forever in clients:
 
