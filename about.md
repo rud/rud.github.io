@@ -23,10 +23,10 @@ Do you have a technical challenge you need me to solve? [Contact me](mailto:{{ s
 
 ## Contact details
 
-[{{ site.email }}](mailto:{{ site.email }}) |
-+45&nbsp;2588&nbsp;4665 |
-Skype:&nbsp;[object.io](skype:object.io) |
-[Detailed CV](https://www.linkedin.com/in/laustrud/) |
+[{{ site.email }}](mailto:{{ site.email }})<br>
++45&nbsp;2588&nbsp;4665<br>
+Skype:&nbsp;[object.io](skype:object.io)<br>
+[Detailed CV](https://www.linkedin.com/in/laustrud/)<br>
 [Public key](https://keybase.io/rud)
 
 {% include follow-updates.html %}
