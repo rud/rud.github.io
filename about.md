@@ -21,13 +21,7 @@ If you consider using Ruby on Rails for your next web application, let me help y
 
 Do you have a technical challenge you need me to solve? [Contact me](mailto:{{ site.email }}) and we'll talk through the options together.
 
-## Company details
-
-object.io aps<br>
-P.P.Ørums Gade 36<br>
-DK-8000 Århus C<br>
-Denmark<br>
-VAT no.: DK33745125
+## Contact details
 
 [{{ site.email }}](mailto:{{ site.email }}) |
 +45&nbsp;2588&nbsp;4665 |
