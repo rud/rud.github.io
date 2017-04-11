@@ -5,6 +5,16 @@ date: 2017-04-11 12:00
 comments: false
 ---
 
+A typical first impression of running rubocop on a large project:
+
+```
+  669 files inspected, 1700 offenses detected
+```
+
+Where to start. I'll tell you. Welcome to the "Rubocop for Large Projects" guide.
+
+---
+
 Long-lived and valuable software projects typically pass though the hands of multiple maintainers. Each maintainer provide their unique insight and leave a fingerprint on the code. During the lifetime of a software project, the code is read many times compared to the times it is actually changed. There are many factors in how easy a piece of code is to understand, including your level of experience, whether you wrote it, and how well it is factored.
 
 One simple aspect of code readability is at the very surface, the characters on the page. The consistency spacing, use or lack of newlines, compactness of complexity. Is the story of the system told consistently and compellingly, or is the essence of the system buried in irrelevant, potentially distracting, details? Does a simple change entail editing code in more locations than seems reasonable, and having to remember to do everything "just so"?
