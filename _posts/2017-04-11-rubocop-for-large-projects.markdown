@@ -13,7 +13,7 @@ A typical first impression of running rubocop on a large project:
 
 Where to start. I'll tell you. Welcome to the "Rubocop for Large Projects" guide.
 
----
+## How did we get here?
 
 Long-lived and valuable software projects typically pass though the hands of multiple maintainers. Each maintainer provide their unique insight and leave a fingerprint on the code. During the lifetime of a software project, the code is read many times compared to the times it is actually changed. There are many factors in how easy a piece of code is to understand, including your level of experience, whether you wrote it, and how well it is factored.
 
