@@ -58,7 +58,8 @@ There are four types of rules called cops in rubocop:
 Configuration is stored in a `.rubocop.yml` file in the root of your project. If your project matches the default ruby style guide settings, you can even skip having a configuration file altogether.
 
 By default style, lint and metrics cops are enabled. Rails cops have to be enabled manually, simply for the reason that not all Ruby-code is Rails code. To enable Rails cops, simply create a new file `.rubocop.yml` and add this as the contents:
-```
+
+``` yaml
 inherit_from: .rubocop_todo.yml
 
 AllCops:
@@ -182,7 +183,7 @@ By keeping separate the automated and manual fixes it becomes easier to review, 
 
 - Large methods
 - Large classes or modules
-- The unseen issues [coupling? bad or inconsistent naming?]
+- The less obvious issues such as coupling and inconsistent or non-standard naming
 
 ## Your new daily habits
 
@@ -190,9 +191,13 @@ By keeping separate the automated and manual fixes it becomes easier to review, 
 - Break down a single complex class into more classes
 - Document why a single class exists
 
-## Conclusion
+## Final thoughts
 
-## Recommended reading
+This guide has hopefully helped you get started with Rubocop and applying it to your large project.
+
+For some concrete examples of making a codebase a bit more consistent, you can read through [my merge-requests to the errbit project](https://github.com/errbit/errbit/pulls?utf8=✓&q=is%3Apr%20is%3Aclosed%20author%3Arud%20sort%3Acreated-asc%20rubocop)
+
+## Related reading
 
 * Sandi Metz *Practical Object-Oriented Design in Ruby*, [poodr.com](http://www.poodr.com), 2012
 * Nat Pryce and Steve Freeman *Growing Object-Oriented Software, Guided by Tests*, 2009
