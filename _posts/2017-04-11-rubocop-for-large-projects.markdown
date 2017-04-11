@@ -3,6 +3,7 @@ layout: post
 title: "Rubocop for Large Projects"
 date: 2017-04-11 12:00
 comments: false
+categories: [ruby, rails, workflow]
 ---
 
 A typical first impression of running rubocop on a large project:
