@@ -1,0 +1,43 @@
+# Site settings
+title: object.io
+subtitle: All code has costs. Only some code has value.
+author: laustrud
+email: work@valuestream.io
+description: >
+  Hi, I'm Laust Rud Jacobsen, an experienced webapp developer
+  specializing in Ruby and PostgreSQL-based solutions.
+  You can hire me to build awesome stuff for you.
+
+  <p>Your idea needs somebody who understands the tools, and
+  can puzzle out the trickiest of issues. I hold a M.Sc.
+  in Computer Science, and I use that foundation to build
+  efficient, maintainable and understandable solutions.
+  I have been working full-time on Rails-projects since
+  early 2008, and have been test-driven since day one.</p>
+
+  <p>I live in beautiful Aarhus, Denmark, and I have
+  excellent experience working efficiently with both local
+  and globally distributed teams.</p>
+
+  <p>Don't be a stranger - <a href="mailto:work@valuestream.io">
+    drop me a line</a>.
+  </p>
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://object.io" # the base hostname & protocol for your site
+twitter_username: laustrud
+twitter:
+  username: laustrud
+  card: summary
+
+github_username:  rud
+
+# Build settings
+markdown: kramdown
+permalink: "/site/:year/:title/"
+paginate: 2 # for the frontpage
+paginate_path: "/blog/page/:num"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

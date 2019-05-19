@@ -1,0 +1,23 @@
+---
+layout: post
+title: "chop - efficiently dispense with current git branch"
+wordpress_id: 28
+wordpress_url: http://object.io/site/?p=28
+date: 2011-01-18 11:55:16 +01:00
+categories: [tools, git, workflow]
+---
+My git workflow includes the <a href="{% post_url 2010-12-29-hack-and-ship %}">hack and ship</a> commands for easy tracking of a shared <code>master</code> branch, and conveniently delivering commits. Feature branches are cheap and fast in git, and I am often spawning new branches to try stuff out or work on unrelated things.
+
+Now, meet <code>chop</code> - for chopping down the current working branch after it has been shipped and is no longer needed. The script changes the current branch to <code>master</code>, and then deletes the branch you was previously on. If you give a branch-name as an argument that will be the new current branch.
+
+{% highlight bash %}
+#!/bin/sh -x
+set -o errexit
+CURRENT_BRANCH=$(git branch | grep '\*')
+git checkout ${1:-"master"} || exit 1
+git branch -d ${CURRENT_BRANCH:2}
+{% endhighlight %}
+
+I use this small script is multiple times every day, and I really like the name of it. There is not a whole lot of functionlity, but as this is an often repeated action, it makes sense to automate it.
+
+Enjoy!

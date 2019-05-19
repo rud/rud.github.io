@@ -1,0 +1,26 @@
+$logo-color: rgb(33, 117, 155);
+
+.pagination .next {
+  float: right;
+}
+
+.site-header .site-title {
+  color: $logo-color;
+  font-family: "PT Serif", Georgia, "Helvetica Neue", Arial, sans-serif;
+  font-size: 43px;
+  font-weight: normal;
+}
+
+.follow-updates {
+  background-color: $grey-color-light;
+  overflow: hidden;
+  padding: $spacing-unit;
+
+  .author-photo {
+    float: right;
+    overflow: hidden;
+    padding-left: $spacing-unit / 2;
+    width: $spacing-unit * 4;
+  }
+}
+
