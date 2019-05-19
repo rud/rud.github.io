@@ -242,8 +242,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (= 1.16.4)
+  bundler (= 2.0.1)
   github-pages
 
 BUNDLED WITH
-   1.16.4
+   2.0.1
