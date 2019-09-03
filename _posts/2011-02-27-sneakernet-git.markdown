@@ -5,6 +5,8 @@ wordpress_id: 334
 wordpress_url: http://object.io/site/?p=334
 date: 2011-02-27 19:51:21 +01:00
 categories: [tools, git, workflow]
+redirect_from:
+  - /site/2011/02/sneakernet-git/
 ---
 There are many ways to backup a git repository and shuttle sets of changes around. If you just want an offline copy for safe-keeping, this method is very simple and convenient:
 
