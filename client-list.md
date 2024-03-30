@@ -19,7 +19,7 @@ menu_order: 3
 * [inet.dk](https://inet.dk), Denmark
 * [Jyske Bank](https://www.jyskebank.dk), Denmark
 * [KreditRegisteret](https://www.kreditregisteret.dk), Denmark
-* [KeepFocus A/S](http://keepfocus.dk), Denmark
+* KeepFocus A/S, Denmark
 * MicroPlanet, Denmark
 * Munich Technology Partners, Germany
 * mouZe.net, Denmark
