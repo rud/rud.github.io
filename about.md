@@ -23,7 +23,7 @@ Do you have a technical challenge you need me to solve? [Contact me](mailto:{{ s
 
 ## Company details
 
-valuestream.io<br>
+[valuestream.io](https://valuestream.io)<br>
 Ørvadsvej 56<br>
 DK-8220 Århus C<br>
 Denmark<br>
@@ -33,7 +33,6 @@ VAT no.: [DK-25331257](https://datacvr.virk.dk/data/visenhed?enhedstype=virksomh
 
 [{{ site.email }}](mailto:{{ site.email }})<br>
 +45&nbsp;2588&nbsp;4665<br>
-Skype:&nbsp;[object.io](skype:object.io)<br>
 [Detailed CV](https://www.linkedin.com/in/laustrud/)<br>
 [Public key](https://keybase.io/rud)
 
