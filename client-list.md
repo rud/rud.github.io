@@ -12,7 +12,7 @@ menu_order: 3
 * [bethgrafik](https://bethgrafik.dk), Denmark
 * [Change:HealthCare](https://www.changehealthcare.com), Nashville, TN, USA
 * Checkd.in Corp, Nashville, TN, USA
-* [CreativeCircle](http://creativecircle.dk), Denmark
+* [CreativeCircle](https://creativecircle.dk), Denmark
 * [Copenhagen Airport](https://cph.dk), Denmark
 * [Fab:IT](http://fab-it.dk), Denmark
 * [HK](https://hk.dk), Denmark
