@@ -21,7 +21,7 @@ menu_order: 3
 * [KreditRegisteret](https://www.kreditregisteret.dk), Denmark
 * [KeepFocus A/S](http://keepfocus.dk), Denmark
 * MicroPlanet, Denmark
-* [Munich Technology Partners](http://mtpartners.de), Germany
+* Munich Technology Partners, Germany
 * mouZe.net, Denmark
 * [NordPlaner](https://www.nordplaner.dk), Denmark
 * [Ristorante Ravello](https://ristoranteravello.dk/), Denmark
