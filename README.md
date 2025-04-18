@@ -2,8 +2,8 @@
 
 Read it at [object.io](https://object.io).
 
-## Build locally
+## Preview locally
 
 ``` sh
-bundle exec jekyll build --watch --incremental
+bundle exec jekyll serve
 ```
