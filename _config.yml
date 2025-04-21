@@ -25,11 +25,7 @@ description: >
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://object.io" # the base hostname & protocol for your site
-twitter_username: laustrud
-twitter:
-  username: laustrud
-  card: summary
-
+bluesky_username: object.io
 github_username:  rud
 
 # Build settings
