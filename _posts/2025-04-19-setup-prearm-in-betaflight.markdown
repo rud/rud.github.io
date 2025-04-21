@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setup pre-arm in betaflight
-date: 2025-04-21 09:45:00 +01:00
+date: 2025-04-21 06:45:00 +01:00
 categories: [tools, drone, betaflight, safety]
 ---
 
